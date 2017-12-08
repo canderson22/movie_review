@@ -3,6 +3,14 @@ class MoviesController < ApplicationController
   # We get authenticate_user! from devise
   before_action :authenticate_user!, except: [:index, :show]
 
+  def search
+    if params[:search].present?
+      @movies = Movie.search params[:search], fields: [:title]
+    else
+      @movies = Movie.all
+    end
+  end
+
   def index
     @movies = Movie.all
   end

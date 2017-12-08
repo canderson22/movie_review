@@ -24,6 +24,7 @@ gem 'devise', '~> 4.3'
 gem 'paperclip', '~> 5.1'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'raty_ratings', '~> 1.2'
+gem 'searchkick', '~> 2.4'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
