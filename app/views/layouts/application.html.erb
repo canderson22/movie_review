@@ -9,6 +9,7 @@
   </head>
 
   <body>
+    <%= render 'layouts/partials/header' %>
     <% flash.each do |name, msg| %>
       <%= content_tag(:div, msg, class: "alert alert-info") %>
     <% end %>
